@@ -95,6 +95,58 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ccc;
+    padding: 0;
+}
+h1 {
+    width: 60%;
+    float: left;
+}
+main {
+    clear: both;
+}
+h1, .score {
+    font-size: 2em;
+    margin: 0;
+}
+.score {
+    text-align: right;
+}
+header {
+    padding: 15px;
+    background-color: yellow;
+}
+main div {
+    padding: 15px;
+    position: relative;
+}
+main div:nth-child(odd) {
+    background-color: cornflowerblue;
+}
+main img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    
+}
+main img[alt="Thumbs Up"] {
+    right: 70px;
+}
+
+
 
 
 
